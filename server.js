@@ -8,9 +8,9 @@ var app = express();
 
 var routes = require("./routes");
 
-app.user(express.urlencoderd ({ extended:true}))-;
+app.use(express.urlencoded ({ extended:true}));
 app.use(express.json());
-app.use.use(express.static("public"));
+app.use(express.static("public"));
 
 app.engine("handlebars", express({ detailLayout: "main" }));
 app.set("view engine", "handlebars");
